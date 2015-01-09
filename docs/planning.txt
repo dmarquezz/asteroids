@@ -1,0 +1,34 @@
+moving object
+  x, y, vel ([x, y]), radius, color
+  isCollidedWith(otherObj)
+    return Asteroids.Util.distance(this, otherObj) < this.radius + otherObj.radius
+
+  asteroid
+
+  ship
+    shoot
+    accelerate
+    brake
+
+  bullet
+
+game
+  objects
+    array of asteroids
+    one ship
+    maybe bullets
+
+  attributes
+    size (x and y)
+    context
+    rendering frequency
+    numLives
+    score
+
+  methods
+    draw
+    remove
+    moveObjects
+    checkCollisions
+    wrapObjects - checks if astroid and ship reached boundary
+    step - calls moveObjects, wrapObjects, draw
